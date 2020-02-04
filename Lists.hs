@@ -1,6 +1,10 @@
 module Lists (
-  quicksort
+  quicksort,
+  zip',
+  toUpperWord,
 ) where
+
+import Data.Char (toUpper)
 
 quicksort :: (Ord a) => [a] -> [a]
 quicksort [] = []
@@ -11,3 +15,6 @@ zip' :: [a] -> [b] -> [(a, b)]
 zip' [] _ = []
 zip' _ [] = []
 zip' (x:xs) (y:ys) = (x, y):(zip' xs ys)
+
+toUpperWord :: String -> String
+toUpperWord s = [toUpper c | c <- s]
