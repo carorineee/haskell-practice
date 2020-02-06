@@ -35,11 +35,11 @@ vplus (Vector i j k) (Vector q p l) = Vector (i+q) (j+p) (k+l)
 -- Ex: deriving (Eq) -> will compare value constructors and go through and call == on each field
 
 -- By default, the first value constructor is the smallest
-data Bool = False | True deriving (Ord)  
+-- data Bool = False | True deriving (Ord)  
 
 -- Type synonyms
 -- Pretty much the same as typedef in C
-type String = [char]
+-- type String = [char]
 
 type AssocList k v = [(k,v)]
 
